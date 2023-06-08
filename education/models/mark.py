@@ -1,9 +1,12 @@
 from django.db import models
+from django.core.validators import MinValueValidator, MaxValueValidator
 
 
 class Mark(models.Model):
 
-    value = models.IntegerField("Оценка")
+    value = models.IntegerField("Оценка", validators=[
+        MinValueValidator(1), MaxValueValidator(10)
+    ])
     mark_date = models.DateTimeField("Transaction date", auto_now_add=True)
     course = models.ForeignKey("education.course", on_delete=models.CASCADE, 
                                verbose_name="Course", related_name="courses")

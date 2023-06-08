@@ -1,0 +1,1 @@
+[{"model": "education.mark", "pk": 1, "fields": {"value": 5, "mark_date": "2023-06-07T14:19:53.997Z", "course": 1, "student": 1}}]

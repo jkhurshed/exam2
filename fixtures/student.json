@@ -1,0 +1,1 @@
+[{"model": "education.student", "pk": 1, "fields": {"name": "John", "surname": "Jackson", "email": "john@mail.ru", "course": [2, 1]}}]
